@@ -1,0 +1,107 @@
+.cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 5rem;
+
+  @media only screen and (min-width: $bp-medium) {
+    flex-direction: row;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    padding: 5rem 11rem 5rem 5rem;
+    min-width: 20rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      padding: 3rem;
+    }
+  }
+
+  &__img {
+    width: 8rem;
+    padding-top: 2rem;
+  }
+
+  &__h1 {
+    padding: 3rem 0 3rem 0;
+    font-size: 4rem;
+  }
+
+  &__p {
+    font-size: 1.7rem;
+    padding: 0 0 3rem 0;
+    line-height: 1.7;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__sedans {
+    background-color: $color-Bright-orange;
+    border-radius: 1rem 1rem 0 0;
+
+    @media only screen and (min-width: $bp-medium) {
+      border-radius: 1rem 0 0 1rem;
+    }
+  }
+
+  &__suvs {
+    background-color: $color-Dark-cyan;
+  }
+
+  &__luxury {
+    background-color: $color-Very-dark-cyan;
+    border-radius: 0 0 1rem 1rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+
+  &__btn {
+    background-color: white;
+    width: 15rem;
+    border-style: none;
+    text-decoration: none;
+    // text-align: center;
+    border-radius: 3rem;
+    font-weight: bold;
+
+    padding: 1rem;
+
+    &-sedans {
+      color: $color-Bright-orange;
+    }
+
+    &-suvs {
+      color: $color-Dark-cyan;
+    }
+
+    &-luxury {
+      color: $color-Very-dark-cyan;
+    }
+  }
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  padding: 1rem 0 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.attribution a:hover {
+  color: $color-Bright-orange;
+}

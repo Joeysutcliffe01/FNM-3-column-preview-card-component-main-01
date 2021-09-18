@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+@media only screen and (min-width: 50em) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 5rem;
+}
+
+@media only screen and (min-width: 50em) {
+  .cars {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.cars__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: left;
+  padding: 5rem 11rem 5rem 5rem;
+  min-width: 20rem;
+}
+
+@media only screen and (min-width: 50em) {
+  .cars__card {
+    padding: 3rem;
+  }
+}
+
+.cars__img {
+  width: 8rem;
+  padding-top: 2rem;
+}
+
+.cars__h1 {
+  padding: 3rem 0 3rem 0;
+  font-size: 4rem;
+}
+
+.cars__p {
+  font-size: 1.7rem;
+  padding: 0 0 3rem 0;
+  line-height: 1.7;
+}
+
+@media only screen and (min-width: 50em) {
+  .cars__p {
+    font-size: 1.3rem;
+  }
+}
+
+.cars__sedans {
+  background-color: #e38826;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media only screen and (min-width: 50em) {
+  .cars__sedans {
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+
+.cars__suvs {
+  background-color: #006970;
+}
+
+.cars__luxury {
+  background-color: #004241;
+  border-radius: 0 0 1rem 1rem;
+}
+
+@media only screen and (min-width: 50em) {
+  .cars__luxury {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+
+.cars__btn {
+  background-color: white;
+  width: 15rem;
+  border-style: none;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.cars__btn-sedans {
+  color: #e38826;
+}
+
+.cars__btn-suvs {
+  color: #006970;
+}
+
+.cars__btn-luxury {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  padding: 1rem 0 1rem 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.attribution a:hover {
+  color: #e38826;
+}
+/*# sourceMappingURL=style.css.map */
