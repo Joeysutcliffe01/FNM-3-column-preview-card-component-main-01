@@ -8,6 +8,7 @@
 
   @media only screen and (min-width: $bp-medium) {
     flex-direction: row;
+    // border: 2px solid red;
   }
 
   &__card {
@@ -19,6 +20,8 @@
     min-width: 20rem;
 
     @media only screen and (min-width: $bp-medium) {
+      // border: 2px solid red;
+      max-width: 30%;
       padding: 3rem;
     }
   }
